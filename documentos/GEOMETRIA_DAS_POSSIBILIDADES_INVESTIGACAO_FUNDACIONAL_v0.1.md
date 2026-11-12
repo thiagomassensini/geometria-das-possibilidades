@@ -56,41 +56,41 @@ A generalização aqui proposta é **metodológica**, não a alegação de que t
 
 Na v0.2 de *Ontologia da Presença Causal*, a estrutura esquemática é
 
-\[
+$$
 \mathcal G=(\mathcal O,\mathcal R,\mathcal T,\mathcal C,\mathcal I),
-\]
+$$
 
-em que \(\mathcal O\) designa objetos, \(\mathcal R\) relações, \(\mathcal T\) transformações admissíveis, \(\mathcal C\) restrições e \(\mathcal I\) invariantes. Essa é a genealogia da presente investigação. **[FONTE]**
+em que $\mathcal O$ designa objetos, $\mathcal R$ relações, $\mathcal T$ transformações admissíveis, $\mathcal C$ restrições e $\mathcal I$ invariantes. Essa é a genealogia da presente investigação. **[FONTE]**
 
 Convém enriquecer a assinatura com o domínio das descrições, o sistema de observação e um conjunto explícito de perguntas. Propomos:
 
-\[
+$$
 \boxed{\mathfrak G=(X,\mathcal O,\mathcal R,\mathcal C,\mathcal T,\mathsf A,\mathsf H,\mathsf Q)}.
-\]
+$$
 
-- \(X\): estados, situações ou modelos candidatos a distinguir;
-- \(\mathcal O\): objetos internos que podem participar das situações;
-- \(\mathcal R\): relações de aridade variável entre objetos;
-- \(\mathcal C\): restrições que definem quais estados são admissíveis;
-- \(\mathcal T\): transformações entre descrições/câmeras que se deseja considerar;
-- \(\mathsf A\): família de observáveis ou protocolos disponíveis;
-- \(\mathsf H\): interpretação que atribui resultado a cada observável em cada estado;
-- \(\mathsf Q\): perguntas-alvo formuladas sobre estados.
+- $X$: estados, situações ou modelos candidatos a distinguir;
+- $\mathcal O$: objetos internos que podem participar das situações;
+- $\mathcal R$: relações de aridade variável entre objetos;
+- $\mathcal C$: restrições que definem quais estados são admissíveis;
+- $\mathcal T$: transformações entre descrições/câmeras que se deseja considerar;
+- $\mathsf A$: família de observáveis ou protocolos disponíveis;
+- $\mathsf H$: interpretação que atribui resultado a cada observável em cada estado;
+- $\mathsf Q$: perguntas-alvo formuladas sobre estados.
 
-**Importante:** \(X\) não é idêntico a \(\mathcal O\). Um estado pode conter vários objetos e relações; dois estados podem conter exatamente os mesmos objetos e diferir apenas na relação entre eles. Isso evita uma confusão recorrente entre *incluir um objeto* e *adquirir uma maneira de distinguir estados*.
+**Importante:** $X$ não é idêntico a $\mathcal O$. Um estado pode conter vários objetos e relações; dois estados podem conter exatamente os mesmos objetos e diferir apenas na relação entre eles. Isso evita uma confusão recorrente entre *incluir um objeto* e *adquirir uma maneira de distinguir estados*.
 
 ## 2. Possível, impossível, não observado, não identificável
 
 Quatro noções distintas:
 
-- **Possibilidade estrutural:** uma configuração \(x\in X\) obedece às restrições \(\mathcal C\).
-- **Impossibilidade estrutural:** determinada configuração contradiz \(\mathcal C\).
+- **Possibilidade estrutural:** uma configuração $x\in X$ obedece às restrições $\mathcal C$.
+- **Impossibilidade estrutural:** determinada configuração contradiz $\mathcal C$.
 - **Não observado:** não foi obtido um valor de medição, embora o valor possa estar definido.
 - **Não identificável:** estados com respostas diferentes à pergunta produzem exatamente os mesmos resultados sob os observáveis admitidos.
 
 Há ainda uma quinta situação: uma pergunta não é uma propriedade bem definida **das classes relacionais** escolhidas. Isso não é o mesmo que provar que a pergunta carece de todo significado filosófico.
 
-Exemplo: saber que \(x+y=10\) admite infinitas soluções não significa que cada par seja fisicamente possível no sistema real; significa apenas que **essa restrição isolada** não seleciona um par único. A segunda relação \(x-y=2\) pode selecionar \((6,4)\), desde que ambas sejam válidas.
+Exemplo: saber que $x+y=10$ admite infinitas soluções não significa que cada par seja fisicamente possível no sistema real; significa apenas que **essa restrição isolada** não seleciona um par único. A segunda relação $x-y=2$ pode selecionar $(6,4)$, desde que ambas sejam válidas.
 
 ## 3. Duas direções do “aumento”
 
@@ -122,7 +122,7 @@ MUNDO / FENÔMENO (não confundido com sua descrição)
   refinamento / revisão do modelo
 ```
 
-O fluxo não é necessariamente linear: descobertas podem obrigar a revisar \(X\), \(\mathcal C\), ou o significado de \(Q\), e não apenas adicionar sensores.
+O fluxo não é necessariamente linear: descobertas podem obrigar a revisar $X$, $\mathcal C$, ou o significado de $Q$, e não apenas adicionar sensores.
 
 ---
 
@@ -130,36 +130,36 @@ O fluxo não é necessariamente linear: descobertas podem obrigar a revisar \(X\
 
 ## 4. Assinaturas observacionais
 
-Fixe um conjunto \(X\) de estados possíveis, uma família \(A\) de observáveis e, para cada \(a\in A\), uma função de observação
+Fixe um conjunto $X$ de estados possíveis, uma família $A$ de observáveis e, para cada $a\in A$, uma função de observação
 
-\[
+$$
 h_a:X\longrightarrow V_a.
-\]
+$$
 
-\(V_a\) pode ser booleano, numérico, categórico, uma série temporal ou uma distribuição de probabilidade.
+$V_a$ pode ser booleano, numérico, categórico, uma série temporal ou uma distribuição de probabilidade.
 
 A **assinatura observacional** de um estado é
 
-\[
+$$
 \sigma_A(x)=(h_a(x))_{a\in A}\in\prod_{a\in A}V_a.
-\]
+$$
 
-Dois estados são indistinguíveis relativamente a \(A\) quando
+Dois estados são indistinguíveis relativamente a $A$ quando
 
-\[
+$$
 \boxed{x\sim_A y\iff\forall a\in A,\;h_a(x)=h_a(y).}
 \tag{1}
-\]
+$$
 
-A relação \(\sim_A\) é reflexiva, simétrica e transitiva. Ela define uma partição de \(X\), ou equivalentemente o quociente
+A relação $\sim_A$ é reflexiva, simétrica e transitiva. Ela define uma partição de $X$, ou equivalentemente o quociente
 
-\[
+$$
 X/{\sim_A}.
-\]
+$$
 
 **[MAT]** O quociente representa *o que a família atual de observações consegue distinguir*, não necessariamente a estrutura completa do mundo.
 
-O documento v0.2 já introduzia esta ideia usando descrições e predicados \(H(d,o)\). A função \(h_a\) amplia essa construção de resultados booleanos a valores quaisquer e protocolos de medição. **[FONTE + PROPOSTA]**
+O documento v0.2 já introduzia esta ideia usando descrições e predicados $H(d,o)$. A função $h_a$ amplia essa construção de resultados booleanos a valores quaisquer e protocolos de medição. **[FONTE + PROPOSTA]**
 
 ### O alvo não é a assinatura, mas o que ela preserva
 
@@ -167,33 +167,33 @@ Se dois textos apresentam vocabulários diferentes, mas codificam as mesmas rela
 
 ## 5. Teorema I — Refinamento por ampliação observacional
 
-**Enunciado [MAT].** Seja \(A_0\subseteq A_1\) e sejam mantidos o mesmo domínio \(X\) e os mesmos resultados \(h_a\) para os observáveis antigos. Então
+**Enunciado [MAT].** Seja $A_0\subseteq A_1$ e sejam mantidos o mesmo domínio $X$ e os mesmos resultados $h_a$ para os observáveis antigos. Então
 
-\[
+$$
 \boxed{x\sim_{A_1}y\;\Longrightarrow\;x\sim_{A_0}y.}
 \tag{2}
-\]
+$$
 
-**Prova.** Se \(x\) e \(y\) concordam para todo \(a\in A_1\), concordam em particular para todo \(a\in A_0\), pois \(A_0\subseteq A_1\). \(\square\)
+**Prova.** Se $x$ e $y$ concordam para todo $a\in A_1$, concordam em particular para todo $a\in A_0$, pois $A_0\subseteq A_1$. $\square$
 
 **Interpretação:** uma observação adicional pode dividir uma classe de equivalência preexistente; nunca funde classes distintas, sob as hipóteses do teorema.
 
 Segue uma aplicação natural entre os quocientes:
 
-\[
+$$
 \pi_{10}: X/{\sim_{A_1}}\longrightarrow X/{\sim_{A_0}},
 \qquad[x]_{A_1}\mapsto[x]_{A_0}.
 \tag{3}
-\]
+$$
 
-Essa aplicação é bem definida e sobrejetora. Para \(X\) finito:
+Essa aplicação é bem definida e sobrejetora. Para $X$ finito:
 
-\[
+$$
 \boxed{|X/{\sim_{A_0}}|\le |X/{\sim_{A_1}}|\le |X|.}
 \tag{4}
-\]
+$$
 
-**Atenção:** o crescimento pode ser igual a zero: adicionar um observável redundante não melhora a discriminação. A inclusão estrita \(A_0\subsetneq A_1\) **não** implica aumento estrito do número de classes.
+**Atenção:** o crescimento pode ser igual a zero: adicionar um observável redundante não melhora a discriminação. A inclusão estrita $A_0\subsetneq A_1$ **não** implica aumento estrito do número de classes.
 
 ### Quando o teorema deixa de se aplicar?
 
@@ -201,22 +201,22 @@ Se a geometria ampliada altera o próprio conjunto de estados, redefine mediçõ
 
 ## 6. Teorema II — Identificabilidade = fatoração pelas observações
 
-Seja \(Q:X\to W\) uma pergunta, entendida como função de resposta (\(W=\{\mathrm{sim},\mathrm{não}\}\) no caso binário).
+Seja $Q:X\to W$ uma pergunta, entendida como função de resposta ($W=\{\mathrm{sim},\mathrm{não}\}$ no caso binário).
 
-Dizemos que \(Q\) é **identificável por \(A\)** quando
+Dizemos que $Q$ é **identificável por $A$** quando
 
-\[
+$$
 \boxed{\forall x,y\in X,\quad x\sim_A y\Longrightarrow Q(x)=Q(y).}
 \tag{5}
-\]
+$$
 
 **Teorema [MAT].** As seguintes condições são equivalentes:
 
-1. \(Q\) é identificável por \(A\).
-2. Existe uma função única \(\overline Q:X/{\sim_A}\to W\) com \(Q=\overline Q\circ q_A\), em que \(q_A\) é o mapa quociente.
-3. Existe uma função \(f:\sigma_A(X)\to W\) com \(Q=f\circ\sigma_A\).
+1. $Q$ é identificável por $A$.
+2. Existe uma função única $\overline Q:X/{\sim_A}\to W$ com $Q=\overline Q\circ q_A$, em que $q_A$ é o mapa quociente.
+3. Existe uma função $f:\sigma_A(X)\to W$ com $Q=f\circ\sigma_A$.
 
-**Demonstração resumida.** Se (1) vale, defina \(\overline Q([x]_A):=Q(x)\). A hipótese garante que o valor independe do representante. Unicidade decorre de \(q_A\) ser sobrejetora. A passagem entre (2) e (3) usa a correspondência natural entre classes de \(\sim_A\) e assinaturas observacionais efetivamente realizadas. As implicações inversas são imediatas. \(\square\)
+**Demonstração resumida.** Se (1) vale, defina $\overline Q([x]_A):=Q(x)$. A hipótese garante que o valor independe do representante. Unicidade decorre de $q_A$ ser sobrejetora. A passagem entre (2) e (3) usa a correspondência natural entre classes de $\sim_A$ e assinaturas observacionais efetivamente realizadas. As implicações inversas são imediatas. $\square$
 
 Em linguagem simples:
 
@@ -226,74 +226,74 @@ Em linguagem simples:
 
 ## 7. Corolário — Uma pergunta já identificável continua identificável
 
-**[MAT]** Se \(A_0\subseteq A_1\) e \(Q\) é identificável por \(A_0\), então \(Q\) é identificável por \(A_1\).
+**[MAT]** Se $A_0\subseteq A_1$ e $Q$ é identificável por $A_0$, então $Q$ é identificável por $A_1$.
 
-**Prova:** aplique (2) para obter equivalência antiga a partir da nova e depois (5). \(\square\)
+**Prova:** aplique (2) para obter equivalência antiga a partir da nova e depois (5). $\square$
 
 Esse corolário é uma versão rigorosa da intuição: aumentar o repertório de observações não destrói uma distinção que já era possível, **desde que o sistema anterior não tenha sido redefinido**.
 
 ## 8. Teorema III — Critério por pares discriminantes
 
-\(Q\) é identificável por \(A\) se, e somente se, para cada par de estados com respostas diferentes existir ao menos um observável que os distinga:
+$Q$ é identificável por $A$ se, e somente se, para cada par de estados com respostas diferentes existir ao menos um observável que os distinga:
 
-\[
+$$
 \boxed{
 Q(x)\ne Q(y)
 \;\Longrightarrow\;
 \exists a\in A:\;h_a(x)\ne h_a(y).
 }
 \tag{6}
-\]
+$$
 
 **[MAT]** Isso é a contrapositiva de (5) com a negação da igualdade de assinaturas. É uma ferramenta direta para selecionar novas relações: não basta encontrar uma relação interessante; ela precisa separar **algum par relevante à pergunta**.
 
 ### Separar estados não é a mesma coisa que responder a uma pergunta
 
-Um novo observável pode distinguir \(x\) de \(y\) sem ajudar a decidir \(Q\), caso \(Q(x)=Q(y)\). Por isso, aumentar a resolução global do espaço pode não melhorar a identificabilidade do problema que motivou a investigação.
+Um novo observável pode distinguir $x$ de $y$ sem ajudar a decidir $Q$, caso $Q(x)=Q(y)$. Por isso, aumentar a resolução global do espaço pode não melhorar a identificabilidade do problema que motivou a investigação.
 
 ## 9. O que significa “geometria mínima para uma pergunta”?
 
-Fixe uma família máxima admissível \(A_{\max}\) e uma pergunta \(Q\). Procure
+Fixe uma família máxima admissível $A_{\max}$ e uma pergunta $Q$. Procure
 
-\[
+$$
 A_*\subseteq A_{\max}
 \quad\text{tal que}\quad
 Q\text{ seja identificável por }A_*.
 \tag{7}
-\]
+$$
 
 Pode-se exigir minimalidade por inclusão ou custo mínimo:
 
-\[
+$$
 \min_{A_*}\sum_{a\in A_*}c(a)
 \quad\text{sujeito à identificabilidade de }Q.
 \tag{8}
-\]
+$$
 
-**[MAT]** Para \(X\) finito, se \(Q\) é identificável pela família completa \(A_{\max}\), então existe um **subconjunto finito** de observáveis que já identifica \(Q\). Basta escolher um discriminante para cada par \((x,y)\) com \(Q(x)\ne Q(y)\). O conjunto de pares é finito.
+**[MAT]** Para $X$ finito, se $Q$ é identificável pela família completa $A_{\max}$, então existe um **subconjunto finito** de observáveis que já identifica $Q$. Basta escolher um discriminante para cada par $(x,y)$ com $Q(x)\ne Q(y)$. O conjunto de pares é finito.
 
 Isso fornece uma cota grosseira para o número de observáveis escolhidos: no máximo o número de pares com respostas diferentes. A cota pode ser reduzida porque um único teste distingue muitos pares.
 
-**[LIMITE]** Uma família mínima pode não ser única. Se dois sensores diferentes medem igualmente o valor de \(Q\), qualquer um deles pode formar uma solução mínima. Não existe, em geral, um “sensor metafisicamente privilegiado”.
+**[LIMITE]** Uma família mínima pode não ser única. Se dois sensores diferentes medem igualmente o valor de $Q$, qualquer um deles pode formar uma solução mínima. Não existe, em geral, um “sensor metafisicamente privilegiado”.
 
-**[LIMITE]** Em espaços infinitos, a identificabilidade pode exigir infinitas observações: considere sequências binárias infinitas \(x\in\{0,1\}^{\mathbb N}\), observáveis de cada coordenada e a pergunta “há alguma coordenada igual a 1?”. A família de todas as coordenadas identifica a pergunta; nenhuma seleção finita de coordenadas o faz.
+**[LIMITE]** Em espaços infinitos, a identificabilidade pode exigir infinitas observações: considere sequências binárias infinitas $x\in\{0,1\}^{\mathbb N}$, observáveis de cada coordenada e a pergunta “há alguma coordenada igual a 1?”. A família de todas as coordenadas identifica a pergunta; nenhuma seleção finita de coordenadas o faz.
 
-**[LIMITE]** Se \(Q\) não for identificável nem por \(A_{\max}\), nenhuma seleção de observáveis *dessa mesma família* resolverá a questão. Isso é um impedimento **relativo à família admitida**, não uma impossibilidade metafísica universal.
+**[LIMITE]** Se $Q$ não for identificável nem por $A_{\max}$, nenhuma seleção de observáveis *dessa mesma família* resolverá a questão. Isso é um impedimento **relativo à família admitida**, não uma impossibilidade metafísica universal.
 
 ## 10. Reticulado de observações e classes
 
-As famílias de observáveis ordenadas por inclusão formam uma estrutura de ordem (um reticulado de conjuntos). A cada família corresponde uma partição de \(X\) em classes de indistinguibilidade. Unir duas famílias de observáveis produz a **interseção das equivalências**:
+As famílias de observáveis ordenadas por inclusão formam uma estrutura de ordem (um reticulado de conjuntos). A cada família corresponde uma partição de $X$ em classes de indistinguibilidade. Unir duas famílias de observáveis produz a **interseção das equivalências**:
 
-\[
+$$
 \boxed{\sim_{A\cup B}\;=\;(\sim_A)\cap(\sim_B).}
 \tag{9}
-\]
+$$
 
 Ou seja, a geometria observacional conjunta distingue exatamente aquilo que pode ser discriminado por ao menos uma das duas famílias.
 
 Não se deve confundir esse fato com a afirmação de que as *estatísticas marginais* de duas medições determinam sua *distribuição conjunta*: podem não determinar, e veremos um exemplo disso adiante.
 
-O espaço de perguntas \(Q\) identificáveis por \(A\) é o espaço de funções constantes nas classes de \(\sim_A\). A inclusão de observáveis amplia o conjunto de perguntas identificáveis, possivelmente sem torná-lo estritamente maior.
+O espaço de perguntas $Q$ identificáveis por $A$ é o espaço de funções constantes nas classes de $\sim_A$. A inclusão de observáveis amplia o conjunto de perguntas identificáveis, possivelmente sem torná-lo estritamente maior.
 
 ### Grau de liberdade: separar três conceitos
 
@@ -305,74 +305,74 @@ A expressão *grau de liberdade observacional* é útil para o projeto, mas deve
 
 ## 11. Caso linear — Um cálculo explícito de posto
 
-Considere \(\theta=(x,y)^\top\in\mathbb R^2\). A observação inicial é
+Considere $\theta=(x,y)^\top\in\mathbb R^2$. A observação inicial é
 
-\[
+$$
 y_0=C_0\theta,\qquad C_0=\begin{bmatrix}1&1\end{bmatrix}.
-\]
+$$
 
-\(\operatorname{rank}C_0=1\), logo o núcleo inclui a direção \((1,-1)^\top\). Estados distintos ao longo dessa direção produzem a mesma observação.
+$\operatorname{rank}C_0=1$, logo o núcleo inclui a direção $(1,-1)^\top$. Estados distintos ao longo dessa direção produzem a mesma observação.
 
 Adicionamos uma segunda relação:
 
-\[
+$$
 C_1=\begin{bmatrix}1&1\\1&-1\end{bmatrix},
 \qquad \det C_1=-2\ne0.
-\]
+$$
 
-Agora \(\operatorname{rank}C_1=2\), o núcleo é trivial, e \(\theta\) é recuperável a partir de \(y=(10,2)^\top\):
+Agora $\operatorname{rank}C_1=2$, o núcleo é trivial, e $\theta$ é recuperável a partir de $y=(10,2)^\top$:
 
-\[
+$$
 \theta=C_1^{-1}y=(6,4)^\top.
-\]
+$$
 
 **[MODELO]** A relação adicional *não criou* novos graus de liberdade físicos. Ela tornou observável a direção que anteriormente pertencia ao núcleo da observação.
 
-**[LIT]** Há aqui uma ligação direta com a observabilidade de sistemas lineares, em que o posto de uma matriz de observabilidade determina a recuperabilidade do estado. Para sistemas dinâmicos discretos \(x_{t+1}=Ax_t\), \(y_t=Cx_t\), a matriz clássica é
+**[LIT]** Há aqui uma ligação direta com a observabilidade de sistemas lineares, em que o posto de uma matriz de observabilidade determina a recuperabilidade do estado. Para sistemas dinâmicos discretos $x_{t+1}=Ax_t$, $y_t=Cx_t$, a matriz clássica é
 
-\[
+$$
 \mathcal O_K=\begin{bmatrix}C\\CA\\\vdots\\CA^{n-1}\end{bmatrix}.
-\]
+$$
 
-O sistema LTI é observável se \(\operatorname{rank}\mathcal O_K=n\). Nossa arquitetura é mais geral; não se deve identificar automaticamente toda geometria relacional com um sistema linear de controle.
+O sistema LTI é observável se $\operatorname{rank}\mathcal O_K=n$. Nossa arquitetura é mais geral; não se deve identificar automaticamente toda geometria relacional com um sistema linear de controle.
 
 ---
 # Parte III — Exemplos que testam a proposta
 
 ## 12. Exemplo decisivo: os objetos não mudam, a relação muda
 
-Considere dois objetos binários \(A,B\), ambos individualmente observáveis. Há duas hipóteses para a distribuição conjunta de seus resultados:
+Considere dois objetos binários $A,B$, ambos individualmente observáveis. Há duas hipóteses para a distribuição conjunta de seus resultados:
 
-| Par \((A,B)\) | Hipótese \(H_1\): iguais | Hipótese \(H_2\): opostos |
+| Par $(A,B)$ | Hipótese $H_1$: iguais | Hipótese $H_2$: opostos |
 |:--|--:|--:|
-| \((0,0)\) | \(1/2\) | \(0\) |
-| \((0,1)\) | \(0\) | \(1/2\) |
-| \((1,0)\) | \(0\) | \(1/2\) |
-| \((1,1)\) | \(1/2\) | \(0\) |
+| $(0,0)$ | $1/2$ | $0$ |
+| $(0,1)$ | $0$ | $1/2$ |
+| $(1,0)$ | $0$ | $1/2$ |
+| $(1,1)$ | $1/2$ | $0$ |
 
 Sob ambas as hipóteses:
 
-\[
+$$
 P(A=0)=P(A=1)=P(B=0)=P(B=1)=\tfrac12.
-\]
+$$
 
-Qualquer teste limitado **à distribuição de \(A\) sozinho** ou **à de \(B\) sozinho** é incapaz de distinguir \(H_1\) de \(H_2\).
+Qualquer teste limitado **à distribuição de $A$ sozinho** ou **à de $B$ sozinho** é incapaz de distinguir $H_1$ de $H_2$.
 
-Mas a relação \(R(A,B):=[A=B]\) distingue perfeitamente:
+Mas a relação $R(A,B):=[A=B]$ distingue perfeitamente:
 
-\[
+$$
 P(A=B\mid H_1)=1,
 \qquad P(A=B\mid H_2)=0.
-\]
+$$
 
 **[MODELO] Conclusão:** nenhum objeto novo foi introduzido. Nenhuma marginal individual mudou. **A diferença está integralmente na relação**. Isto é uma realização formal muito próxima da intuição original de que não basta olhar para objetos isolados.
 
-**Sutileza:** conhecer as distribuições marginais não equivale a observar os dois valores conjuntamente. Se forem medidos pares \((A,B)\) em cada tentativa, a informação relacional já estará na distribuição conjunta, ainda que não tenha sido analisada. Uma ampliação pode, portanto, ser analítica e não instrumental.
+**Sutileza:** conhecer as distribuições marginais não equivale a observar os dois valores conjuntamente. Se forem medidos pares $(A,B)$ em cada tentativa, a informação relacional já estará na distribuição conjunta, ainda que não tenha sido analisada. Uma ampliação pode, portanto, ser analítica e não instrumental.
 
 ### Três formas de ampliação presentes no exemplo
 
-1. **Nova relação:** calcular \(A=B\), não apenas o valor individual.
-2. **Nova organização do dado:** preservar qual medição de \(A\) corresponde a qual medição de \(B\).
+1. **Nova relação:** calcular $A=B$, não apenas o valor individual.
+2. **Nova organização do dado:** preservar qual medição de $A$ corresponde a qual medição de $B$.
 3. **Nova pergunta:** “os resultados se coordenam?” em lugar de “quanto vale cada objeto, isoladamente?”.
 
 Isso demonstra por que a investigação precisa de uma teoria de **relações de múltiplas entradas** e não apenas de uma lista ampliada de atributos individuais.
@@ -383,16 +383,16 @@ O documento v0.2 parte de uma pergunta binária tradicional, “Deus existe?”,
 
 Defina duas descrições:
 
-- \(d_+\): há um referente metafísico independente;
-- \(d_-\): não há esse referente.
+- $d_+$: há um referente metafísico independente;
+- $d_-$: não há esse referente.
 
 É possível **construir** uma geometria cujos observáveis registram somente crenças, rituais, comportamentos e relações sociais e em que as duas descrições concordam integralmente sobre eles:
 
-\[
+$$
 d_+\sim_A d_-.
-\]
+$$
 
-A pergunta \(M\), referente à existência independente, assume valores diferentes nas duas descrições; nesse modelo, \(M\) **não é uma função bem definida de** \(X/\sim_A\).
+A pergunta $M$, referente à existência independente, assume valores diferentes nas duas descrições; nesse modelo, $M$ **não é uma função bem definida de** $X/\sim_A$.
 
 Daí não segue que Deus exista, que não exista, ou que a questão esteja condenada à ausência eterna de resposta. Segue apenas que os observáveis escolhidos **não determinam** aquela distinção. Essa neutralidade condicional é expressamente defendida pelo rascunho de origem. **[FONTE]**
 
@@ -400,25 +400,25 @@ Daí não segue que Deus exista, que não exista, ou que a questão esteja conde
 
 Pode haver um padrão representado, transmitido e instanciado por portadores humanos. Em certas condições, uma crença pode participar de uma mudança de comportamento, relação social ou organização institucional. O rascunho chama de *presença causal* a instanciação de um padrão que medeia transformação não trivial. A ideia é separar:
 
-\[
+$$
 \text{presença do padrão em relações humanas}
 \not\Rightarrow
 \text{referente independente}.
-\]
+$$
 
 E igualmente:
 
-\[
+$$
 \text{presença do padrão em relações humanas}
 \not\Rightarrow
 \text{ausência de referente independente}.
-\]
+$$
 
 **[LIMITE]** O predicado `Medeia` da v0.2 é primitivo: sua ocorrência no mundo exige justificação empírica ou uma teoria causal adicional. Uma mudança após um ritual não prova, por si só, que o ritual a causou. A versão 0.2 reconhece explicitamente esse limite.
 
 ### O ponto de investigação que vai além do rascunho
 
-A pergunta mais útil passa a ser: **que observável adicional, se admissível e verificável, faria a distinção entre \(d_+\) e \(d_-\) deixar de ser puramente descritiva no modelo?**
+A pergunta mais útil passa a ser: **que observável adicional, se admissível e verificável, faria a distinção entre $d_+$ e $d_-$ deixar de ser puramente descritiva no modelo?**
 
 Isso é uma questão de projeto de discriminação entre hipóteses. Não pressupõe que tal observável exista nem que seria empiricamente acessível.
 
@@ -428,19 +428,19 @@ O documento de origem separa sobrevivência biológica, continuidade da mesma co
 
 Considere a transmissão
 
-\[
+$$
 p_0\xrightarrow{c_0\to c_1}p_1\xrightarrow{c_1\to c_2}p_2.
-\]
+$$
 
-A identidade literal \(p_0=p_2\) pode não ser o critério apropriado, porque diferentes portadores, palavras ou práticas podem conservar uma organização comum.
+A identidade literal $p_0=p_2$ pode não ser o critério apropriado, porque diferentes portadores, palavras ou práticas podem conservar uma organização comum.
 
-Fixe uma família de invariantes \(\mathcal I=\{I_1,\ldots,I_k\}\) e uma família de transformações admissíveis \(\mathcal T\). Uma definição **possível**, que exige cuidado, seria:
+Fixe uma família de invariantes $\mathcal I=\{I_1,\ldots,I_k\}$ e uma família de transformações admissíveis $\mathcal T$. Uma definição **possível**, que exige cuidado, seria:
 
-\[
+$$
 p\approx_{\mathcal I}q
 \iff
 \forall I\in\mathcal I,\ I(p)=I(q).
-\]
+$$
 
 Outra, geralmente mais forte, requer uma transformação admissível entre os padrões, ou uma cadeia dessas transformações. Coincidência de alguns invariantes pode ser insuficiente para garantir equivalência estrutural plena.
 
@@ -456,22 +456,22 @@ A geometria permite investigar sobrevivência **estrutural** sem decretar sobrev
 
 ## 15. Exemplo da investigação científica: duas teorias, a mesma predição
 
-Duas teorias \(T_1\) e \(T_2\) podem concordar sobre as medições feitas até hoje, mas discordar sobre um caso ainda não medido. Então a equivalência é relativa à família atual de experimentos:
+Duas teorias $T_1$ e $T_2$ podem concordar sobre as medições feitas até hoje, mas discordar sobre um caso ainda não medido. Então a equivalência é relativa à família atual de experimentos:
 
-\[
+$$
 T_1\sim_{A_0}T_2,
 \qquad
 T_1\not\sim_{A_1}T_2
 \quad (A_0\subseteq A_1).
-\]
+$$
 
 Isso não prova qual teoria é verdadeira. Revela um **experimento discriminante**. É um caso canônico de subdeterminação por evidência, estudado na filosofia da ciência. **[LIT]**
 
-Importante: a nova experiência pode também mostrar que **ambas** as teorias estavam erradas, exigindo ampliação do próprio conjunto \(X\). Aqui, a operação não é apenas refinamento de partição: é revisão de modelo.
+Importante: a nova experiência pode também mostrar que **ambas** as teorias estavam erradas, exigindo ampliação do próprio conjunto $X$. Aqui, a operação não é apenas refinamento de partição: é revisão de modelo.
 
 ## 16. Exemplo de ciência de dados: variável latente e confusão causal
 
-Suponha que observamos associação entre \(X\) e \(Y\). Duas estruturas podem explicá-la:
+Suponha que observamos associação entre $X$ e $Y$. Duas estruturas podem explicá-la:
 
 ```text
 Hipótese A: X ----> Y
@@ -479,9 +479,9 @@ Hipótese A: X ----> Y
 Hipótese B: X <---- Z ----> Y
 ```
 
-Mesmo que produzam uma distribuição observacional semelhante para \(X,Y\), elas podem diferir na resposta a uma intervenção \(do(X=x)\). Nesse caso, adicionar \(Z\), definir uma intervenção ou adotar restrições causais adicionais **pode** tornar identificável a questão do efeito de \(X\) sobre \(Y\).
+Mesmo que produzam uma distribuição observacional semelhante para $X,Y$, elas podem diferir na resposta a uma intervenção $do(X=x)$. Nesse caso, adicionar $Z$, definir uma intervenção ou adotar restrições causais adicionais **pode** tornar identificável a questão do efeito de $X$ sobre $Y$.
 
-Mas há casos nos quais apenas observar \(Z\) não basta; a identificabilidade depende do modelo causal, das hipóteses e da estrutura de confundimento. **[LIT]**
+Mas há casos nos quais apenas observar $Z$ não basta; a identificabilidade depende do modelo causal, das hipóteses e da estrutura de confundimento. **[LIT]**
 
 Esta é uma correção importante para a frase “através das relações observamos causa e consequência”: relações observadas podem indicar caminhos causais, mas não identificam automaticamente a direção da causalidade.
 
@@ -507,18 +507,18 @@ O projeto filosófico pode aprender com essa disciplina de proveniência, sem ab
 
 A expressão “o que não muda quando tudo muda?” só se torna matemática depois de especificar **o que pode mudar**. Não existe invariante sem uma classe de transformações.
 
-Se um grupo \(G\) atua num espaço \(X\), uma propriedade \(I:X\to V\) é invariante quando
+Se um grupo $G$ atua num espaço $X$, uma propriedade $I:X\to V$ é invariante quando
 
-\[
+$$
 I(g\cdot x)=I(x),\qquad\forall g\in G,\ x\in X.
-\]
+$$
 
-Mais geralmente, quando transformações relacionam estruturas distintas, usa-se uma família de mapas \(T_{ij}:X_i\to X_j\) e funções de leitura \(I_i\), requerendo comutatividade:
+Mais geralmente, quando transformações relacionam estruturas distintas, usa-se uma família de mapas $T_{ij}:X_i\to X_j$ e funções de leitura $I_i$, requerendo comutatividade:
 
-\[
+$$
 \boxed{I_j\circ T_{ij}=I_i.}
 \tag{10}
-\]
+$$
 
 É uma forma precisa de dizer que uma leitura estrutural sobrevive à troca de câmera.
 
@@ -570,13 +570,13 @@ Essa afirmação é uma aproximação matemática **muito próxima** do projeto 
 
 Mas sua força depende de usar a **coleção completa de sondagens categóricas adequada**. Um conjunto parcial de relações pode não distinguir objetos não isomorfos; o princípio de Yoneda não transforma observações limitadas em conhecimento ilimitado.
 
-**Programa [HIPÓTESE]:** representar cada câmera por uma categoria \(\mathcal C_i\), os transportes entre câmeras por funtores e os invariantes compartilhados por observáveis naturais em diagramas de transporte. Não é necessário adotar essa generalização antes de demonstrar que ela acrescenta algo além do modelo elementar de partições.
+**Programa [HIPÓTESE]:** representar cada câmera por uma categoria $\mathcal C_i$, os transportes entre câmeras por funtores e os invariantes compartilhados por observáveis naturais em diagramas de transporte. Não é necessário adotar essa generalização antes de demonstrar que ela acrescenta algo além do modelo elementar de partições.
 
 ## 23. Contextos, dependência de relações e colagem
 
 Há duas ferramentas adicionais potencialmente relevantes:
 
-**Análise Formal de Conceitos:** um contexto \((G,M,I)\) relaciona objetos, atributos e incidência, permitindo construir hierarquias de conceitos por uma conexão de Galois. Isso oferece um modelo rigoroso de como relações compartilhadas geram classes conceituais. **[LIT]**
+**Análise Formal de Conceitos:** um contexto $(G,M,I)$ relaciona objetos, atributos e incidência, permitindo construir hierarquias de conceitos por uma conexão de Galois. Isso oferece um modelo rigoroso de como relações compartilhadas geram classes conceituais. **[LIT]**
 
 **Feixes e contextualidade:** em cenários com observações disponíveis apenas em determinados contextos, uma coleção de dados locais pode ou não admitir uma descrição global conjunta. A literatura de Abramsky–Brandenburger apresenta um formalismo de feixes para contextualidade, ligado à existência de seções globais. **[LIT]**
 
@@ -586,12 +586,12 @@ Essa segunda ligação é promissora porque a ideia original diz que diferentes 
 
 **[HIPÓTESE]** Pode-se definir uma estrutura de comparação entre geometrias, com:
 
-- objetos: geometrias observacionais \((X,A,h)\);
-- setas: traduções \(F:X\to X'\) associadas a mapas de observáveis que preservam os resultados antigos;
+- objetos: geometrias observacionais $(X,A,h)$;
+- setas: traduções $F:X\to X'$ associadas a mapas de observáveis que preservam os resultados antigos;
 - composição: composição das traduções que satisfazem essas condições;
 - equivalência: mapas invertíveis que preservam a estrutura relevante.
 
-A investigação central seria identificar **invariantes de transporte**: perguntas \(Q\) e \(Q'\) compatíveis com o mapa, isto é, \(Q'=Q\circ F^{-1}\) quando o mapa é uma equivalência adequada, ou a condição geral \(Q'\circ F=Q\) quando há apenas um mapa de ida.
+A investigação central seria identificar **invariantes de transporte**: perguntas $Q$ e $Q'$ compatíveis com o mapa, isto é, $Q'=Q\circ F^{-1}$ quando o mapa é uma equivalência adequada, ou a condição geral $Q'\circ F=Q$ quando há apenas um mapa de ida.
 
 A advertência é essencial: sem uma definição exata de morfismo e das propriedades conservadas, essa construção permanece somente um projeto.
 
@@ -601,17 +601,17 @@ A advertência é essencial: sem uma definição exata de morfismo e das proprie
 
 ## 25. Por que uma relação observada não determina, por si só, uma causa?
 
-Considere duas variáveis estatisticamente associadas. A distribuição pode ser compatível com \(X\to Y\), \(Y\to X\) ou \(X\leftarrow Z\to Y\), dependendo das hipóteses. Observar correlação descreve uma relação; atribuir causalidade exige distinguir mecanismos e o que ocorreria sob intervenções ou contrafactuais.
+Considere duas variáveis estatisticamente associadas. A distribuição pode ser compatível com $X\to Y$, $Y\to X$ ou $X\leftarrow Z\to Y$, dependendo das hipóteses. Observar correlação descreve uma relação; atribuir causalidade exige distinguir mecanismos e o que ocorreria sob intervenções ou contrafactuais.
 
 Uma maneira clássica de formular o salto causal é trabalhar com modelos estruturais, por exemplo:
 
-\[
+$$
 Y=f_Y(X,U_Y),
 \qquad
 X=f_X(U_X),
-\]
+$$
 
-em que uma intervenção \(do(X=x)\) substitui a equação estrutural de \(X\) por um valor imposto. A distribuição \(P(Y\mid do(X=x))\) não é, em geral, igual a \(P(Y\mid X=x)\). **[LIT]**
+em que uma intervenção $do(X=x)$ substitui a equação estrutural de $X$ por um valor imposto. A distribuição $P(Y\mid do(X=x))$ não é, em geral, igual a $P(Y\mid X=x)$. **[LIT]**
 
 Logo, uma *geometria causal* deve incluir uma família de intervenções ou hipóteses causais adicionais, e não meramente rebatizar a família de correlações existentes.
 
@@ -625,16 +625,16 @@ Logo, uma *geometria causal* deve incluir uma família de intervenções ou hip�
 
 A presença causal do rascunho pode ser conservada nessa arquitetura como um predicado **condicional à validade da relação de mediação**:
 
-\[
+$$
 \operatorname{PresenteCausalmente}(p,t)
 \iff
 \exists c,s_0,s_1:\ 
 \operatorname{Instancia}(c,p,t)
 \land\operatorname{Medeia}(c,p,s_0,s_1,t)
 \land s_0\ne s_1.
-\]
+$$
 
-Não se conclui \(\operatorname{Medeia}\) apenas de \(s_0\ne s_1\). Essa distinção preserva o núcleo do documento de origem e reduz o risco de confundir transformação com causa.
+Não se conclui $\operatorname{Medeia}$ apenas de $s_0\ne s_1$. Essa distinção preserva o núcleo do documento de origem e reduz o risco de confundir transformação com causa.
 
 ## 27. Uma consequência: ampliar relações pode invalidar uma explicação causal anterior
 
@@ -659,23 +659,23 @@ A frase fundadora deste trabalho é **“ampliar o espaço geométrico da minha 
 
 Considere um agente com:
 
-\[
+$$
 \mathcal K_t=(X_t,A_t,B_t,L_t,\mathcal Q_t),
-\]
+$$
 
 em que:
 
-- \(X_t\): hipóteses ou estados que o agente consegue representar no tempo \(t\);
-- \(A_t\): observáveis, conceitos ou testes de que dispõe;
-- \(B_t\): crenças ou pesos atribuídos às hipóteses;
-- \(L_t\): repertório de relações, inferências e traduções;
-- \(\mathcal Q_t\): perguntas que consegue formular.
+- $X_t$: hipóteses ou estados que o agente consegue representar no tempo $t$;
+- $A_t$: observáveis, conceitos ou testes de que dispõe;
+- $B_t$: crenças ou pesos atribuídos às hipóteses;
+- $L_t$: repertório de relações, inferências e traduções;
+- $\mathcal Q_t$: perguntas que consegue formular.
 
 A **expansão do espaço geométrico da consciência**, nessa proposta operacional, pode modificar qualquer um desses elementos:
 
-\[
+$$
 \mathcal K_t\longrightarrow\mathcal K_{t+1}.
-\]
+$$
 
 Nem toda modificação é melhoria. Um conceito inadequado pode acrescentar falsas conexões; uma crença dogmática pode tornar um espaço aparentemente mais organizado, mas menos responsivo à evidência. Assim, o projeto necessita de critérios de **correção**, **calibração**, **coerência**, **capacidade discriminativa** e **revisabilidade**.
 
@@ -683,11 +683,11 @@ Nem toda modificação é melhoria. Um conceito inadequado pode acrescentar fals
 
 ### 30.1 Descobrir um objeto antes ignorado
 
-O observador passa a representar um terceiro evento \(C\), embora antes só considerasse \(A\) e \(B\). A ampliação pode revelar \(A\leftrightarrow C\leftrightarrow B\) e reformular a interpretação da relação \(A\leftrightarrow B\).
+O observador passa a representar um terceiro evento $C$, embora antes só considerasse $A$ e $B$. A ampliação pode revelar $A\leftrightarrow C\leftrightarrow B$ e reformular a interpretação da relação $A\leftrightarrow B$.
 
 ### 30.2 Descobrir uma relação entre objetos já conhecidos
 
-O observador já conhecia os objetos \(A\) e \(B\), mas não havia perguntado se suas variações eram sincronizadas. Não há inclusão de um objeto novo: há **mudança do esquema relacional**.
+O observador já conhecia os objetos $A$ e $B$, mas não havia perguntado se suas variações eram sincronizadas. Não há inclusão de um objeto novo: há **mudança do esquema relacional**.
 
 ### 30.3 Descobrir que duas formulações são equivalentes
 
@@ -716,13 +716,13 @@ O observador reconhece que uma pergunta não pode ser respondida a partir da fam
 
 O exemplo das distribuições marginais mostra que uma relação pode estar codificada em dados já disponíveis, mas não ter sido computada. Isso sugere distinguir:
 
-\[
+$$
 \text{dados disponíveis}
 \quad\ne\quad
 \text{relações extraídas desses dados}
 \quad\ne\quad
 \text{relações justificadas}.
-\]
+$$
 
 Em termos cognitivos, uma pessoa pode adquirir uma perspectiva nova sem receber um novo dado sensorial, por reorganização de representações preexistentes. Mas essa reorganização só adquire conteúdo sobre o mundo se preservar e respeitar as condições pelas quais os dados foram produzidos.
 
@@ -751,36 +751,36 @@ A predição é plausível, mas não foi testada por este documento; requer cont
 
 ## 34. Quando observáveis têm ruído
 
-A teoria elementar usou funções determinísticas \(h_a(x)\). Na prática, um observável pode produzir resultados estocásticos \(Y_a\) com distribuição condicional \(P(Y_a\mid X=x)\).
+A teoria elementar usou funções determinísticas $h_a(x)$. Na prática, um observável pode produzir resultados estocásticos $Y_a$ com distribuição condicional $P(Y_a\mid X=x)$.
 
 Uma equivalência mais apropriada é
 
-\[
+$$
 x\sim_A^{\mathrm{est}}y
 \iff
 P(Y_A\mid X=x)=P(Y_A\mid X=y),
-\]
+$$
 
-em que \(Y_A\) denota a **observação conjunta** dos protocolos da família \(A\). A comparação das distribuições conjuntas evita o erro de inferir igualdade de relações a partir de marginais idênticas.
+em que $Y_A$ denota a **observação conjunta** dos protocolos da família $A$. A comparação das distribuições conjuntas evita o erro de inferir igualdade de relações a partir de marginais idênticas.
 
 Diferenciar distribuições não significa poder determinar sem erro a hipótese a partir de uma única amostra. Isso depende de sobreposição de distribuições, número de repetições e condições experimentais.
 
 ## 35. Monotonicidade da informação condicional
 
-Se \(Q\), \(Y_0\) e \(Y_1\) são variáveis aleatórias discretas numa mesma distribuição conjunta, então
+Se $Q$, $Y_0$ e $Y_1$ são variáveis aleatórias discretas numa mesma distribuição conjunta, então
 
-\[
+$$
 \boxed{H(Q\mid Y_0,Y_1)\le H(Q\mid Y_0).}
 \tag{11}
-\]
+$$
 
 **[MAT]** A desigualdade vem da não negatividade de informação mútua condicional:
 
-\[
+$$
 H(Q\mid Y_0)-H(Q\mid Y_0,Y_1)=I(Q;Y_1\mid Y_0)\ge0.
-\]
+$$
 
-Isso formaliza que observar \(Y_1\) além de \(Y_0\), considerando o mesmo modelo probabilístico, não aumenta a incerteza condicional **média** sobre \(Q\). O ganho pode ser nulo.
+Isso formaliza que observar $Y_1$ além de $Y_0$, considerando o mesmo modelo probabilístico, não aumenta a incerteza condicional **média** sobre $Q$. O ganho pode ser nulo.
 
 **[LIMITE]** Para uma realização particular, a surpresa ou a incerteza subjetiva posterior podem aumentar; a desigualdade envolve entropias esperadas de um modelo probabilístico bem definido, não a experiência psicológica universal de “aprender algo”.
 
@@ -811,7 +811,7 @@ Cada uma merece uma anotação diferente no histórico do projeto.
 
 ### Exagero 2 — “Toda ampliação melhora a resposta a qualquer pergunta”
 
-**Não.** Observáveis redundantes ou irrelevantes a \(Q\) podem não aumentar a identificabilidade de \(Q\).
+**Não.** Observáveis redundantes ou irrelevantes a $Q$ podem não aumentar a identificabilidade de $Q$.
 
 ### Exagero 3 — “Se a geometria atual não distingue, nada pode distinguir”
 
@@ -835,9 +835,9 @@ Cada uma merece uma anotação diferente no histórico do projeto.
 
 ## 38. Três contraexemplos construtivos
 
-**A. Objeto novo sem relação nova.** Acrescentar um símbolo \(z\) completamente desconectado e nunca observado não altera a assinatura dos estados originais. A expansão ontológica nominal não implica aumento observacional.
+**A. Objeto novo sem relação nova.** Acrescentar um símbolo $z$ completamente desconectado e nunca observado não altera a assinatura dos estados originais. A expansão ontológica nominal não implica aumento observacional.
 
-**B. Observável novo redundante.** Medir \(x+y\) e acrescentar apenas \(2(x+y)\) não elimina a direção de indeterminação \((1,-1)\). Um teste numericamente diferente pode não ser relacionalmente independente.
+**B. Observável novo redundante.** Medir $x+y$ e acrescentar apenas $2(x+y)$ não elimina a direção de indeterminação $(1,-1)$. Um teste numericamente diferente pode não ser relacionalmente independente.
 
 **C. Invariante insuficiente.** Dois grafos podem ter o mesmo número de vértices e arestas e não ser isomorfos. Preservar algumas grandezas não basta para identificar a estrutura completa. É necessário verificar a suficiência do conjunto de invariantes para o objetivo.
 
@@ -865,14 +865,14 @@ Um enunciado do projeto deve ser classificado em uma das categorias:
 
 A ordem proposta não depende de avanços filosóficos difíceis:
 
-1. equivalência observacional \(\sim_A\) é uma relação de equivalência;
-2. ampliação \(A_0\subseteq A_1\) implica refinamento de partição;
+1. equivalência observacional $\sim_A$ é uma relação de equivalência;
+2. ampliação $A_0\subseteq A_1$ implica refinamento de partição;
 3. existência do mapa canônico entre quocientes e sua sobrejetividade;
-4. identificabilidade de \(Q\) equivale à fatoração pelo quociente;
+4. identificabilidade de $Q$ equivale à fatoração pelo quociente;
 5. identificabilidade é monótona com o aumento de observáveis;
 6. critérios de discriminação por pares;
 7. caracterização de observáveis redundantes;
-8. igualdade \(\sim_{A\cup B}=\sim_A\cap\sim_B\);
+8. igualdade $\sim_{A\cup B}=\sim_A\cap\sim_B$;
 9. resultados de seleção finita para conjuntos de estados finitos;
 10. contraexemplos para unicidade de famílias mínimas.
 
@@ -964,9 +964,9 @@ Essas questões conectam a geometria à teoria de informação, projeto de exper
 
 ## 43. Generalização dinâmica e relacional
 
-Em sistemas que evoluem no tempo, a assinatura pode ser uma trajetória \(\bigl(h_a(x_t)\bigr)_{t=0}^T\), não uma observação estática. Novas relações temporais podem distinguir estados iniciais que uma medição instantânea não distingue.
+Em sistemas que evoluem no tempo, a assinatura pode ser uma trajetória $\bigl(h_a(x_t)\bigr)_{t=0}^T$, não uma observação estática. Novas relações temporais podem distinguir estados iniciais que uma medição instantânea não distingue.
 
-Relações entre *vários* objetos pedem estruturas de aridade \(k\), hipergrafos ou modelos relacionais; relações entre observações de contextos diferentes pedem regras de compatibilidade. Essas generalizações não devem ser acrescentadas todas de uma vez: cada uma precisa resolver um exemplo que o núcleo anterior não modela adequadamente.
+Relações entre *vários* objetos pedem estruturas de aridade $k$, hipergrafos ou modelos relacionais; relações entre observações de contextos diferentes pedem regras de compatibilidade. Essas generalizações não devem ser acrescentadas todas de uma vez: cada uma precisa resolver um exemplo que o núcleo anterior não modela adequadamente.
 
 ## 44. A “geometria mínima” como problema computacional
 
@@ -974,9 +974,9 @@ O critério (6) transforma a seleção de observáveis em um problema de cobertu
 
 Em instâncias finitas, pode-se implementar:
 
-1. enumeração das hipóteses \(X\);
-2. geração dos pares \((x,y)\) com \(Q(x)\ne Q(y)\);
-3. cálculo de quais pares cada prova \(a\) separa;
+1. enumeração das hipóteses $X$;
+2. geração dos pares $(x,y)$ com $Q(x)\ne Q(y)$;
+3. cálculo de quais pares cada prova $a$ separa;
 4. escolha de um conjunto discriminante;
 5. verificação de minimalidade e busca de alternativas;
 6. emissão de certificado dos pares cobertos.
@@ -1000,11 +1000,11 @@ A formulação preserva cinco intuições de origem:
 
 Acrescenta cinco distinções para aumentar o rigor:
 
-1. ampliar objetos \(\ne\) ampliar relações \(\ne\) ampliar medições;
-2. possibilidade física \(\ne\) compatibilidade com observações;
-3. identificabilidade \(\ne\) certeza empírica obtida;
-4. correlação \(\ne\) causalidade;
-5. equivalência observacional \(\ne\) identidade metafísica.
+1. ampliar objetos $\ne$ ampliar relações $\ne$ ampliar medições;
+2. possibilidade física $\ne$ compatibilidade com observações;
+3. identificabilidade $\ne$ certeza empírica obtida;
+4. correlação $\ne$ causalidade;
+5. equivalência observacional $\ne$ identidade metafísica.
 
 ## 46. Onde está a contribuição intelectual possível?
 
@@ -1252,23 +1252,23 @@ A pesquisa partiu da ideia de que **uma geometria é o campo estruturado das pos
 
 O aprofundamento mostrou que essa intuição contém um núcleo matemático preciso:
 
-\[
+$$
 \boxed{
 \text{novos observáveis}
 \ \Longrightarrow\ 
 \text{refinamento das classes indistinguíveis}
 }
-\]
+$$
 
 sob as condições declaradas. E mostrou que a pergunta mais fértil não é apenas *“quantas coisas consigo observar?”*, mas:
 
-\[
+$$
 \boxed{
 \text{quais relações são suficientes para distinguir}
 \atop
 \text{as respostas que minha pergunta exige?}
 }
-\]
+$$
 
 Por trás disso aparece uma segunda pergunta, sobre invariância:
 
