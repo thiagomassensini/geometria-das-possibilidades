@@ -8,19 +8,19 @@ Ampliar uma geometria pode significar incorporar objetos antes não considerados
 
 ## Formulação inicial
 
-Fixe um conjunto de estados \(X\), uma família de observáveis \(A\) e funções \(h_a:X\to V_a\). Definimos a indistinguibilidade observacional por:
+Fixe um conjunto de estados $X$, uma família de observáveis $A$ e funções $h_a:X\to V_a$. Definimos a indistinguibilidade observacional por:
 
-\[
+$$
 x\sim_A y\iff\forall a\in A,\; h_a(x)=h_a(y).
-\]
+$$
 
-Uma pergunta \(Q:X\to W\) é identificável relativamente a \(A\) quando:
+Uma pergunta $Q:X\to W$ é identificável relativamente a $A$ quando:
 
-\[
+$$
 x\sim_A y\Longrightarrow Q(x)=Q(y).
-\]
+$$
 
-Sob um domínio fixo, com os observáveis antigos preservados, \(A_0\subseteq A_1\) implica \(\sim_{A_1}\subseteq\sim_{A_0}\): ampliar a observação pode refinar classes de estados indistinguíveis.
+Sob um domínio fixo, com os observáveis antigos preservados, $A_0\subseteq A_1$ implica $\sim_{A_1}\subseteq\sim_{A_0}$: ampliar a observação pode refinar classes de estados indistinguíveis.
 
 Essas afirmações são **matemáticas e condicionais**. Identificabilidade não significa que os dados já foram obtidos, e observar uma relação não demonstra automaticamente causalidade.
 
