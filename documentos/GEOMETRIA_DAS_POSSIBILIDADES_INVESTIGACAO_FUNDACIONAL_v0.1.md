@@ -997,6 +997,7 @@ A formulação preserva cinco intuições de origem:
 3. o desconhecimento de uma relação pode limitar a resposta a uma pergunta;
 4. ampliar a geometria pode oferecer capacidade de distinção antes ausente;
 5. o alvo mais profundo é reconhecer estruturas invariantes entre representações.
+
 Acrescenta cinco distinções para aumentar o rigor:
 
 1. ampliar objetos \(\ne\) ampliar relações \(\ne\) ampliar medições;
